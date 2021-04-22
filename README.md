@@ -3,7 +3,7 @@
 #### I developed an Hulu Responsive web app clone using React + SASS to improve myself. 
 ###### I saw it on [ Sonny Sangh](https://www.youtube.com/watch?v=MqDlsjc8GLo) channel and I made improvements (more effective, featured and functional).
 
-## [Live Demo]()
+## [Live Demo](https://hulu-clone-nine.vercel.app/)
 
 #### Tools
 
