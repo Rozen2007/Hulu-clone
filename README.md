@@ -1,9 +1,9 @@
 # Welcome!
 
 #### I developed an Hulu Responsive web app clone using React + SASS to improve myself. 
-###### I saw it on [Clever Programmer](https://www.youtube.com/channel/UCqrILQNl5Ed9Dz6CGMyvMTQ) channel and I made improvements (more effective, featured and functional).
+###### I saw it on [ Sonny Sangh](https://www.youtube.com/watch?v=MqDlsjc8GLo) channel and I made improvements (more effective, featured and functional).
 
-## [Live Demo](https://react-hulu-app.vercel.app/)
+## [Live Demo]()
 
 #### Tools
 
@@ -12,7 +12,7 @@
 - [Axios](https://github.com/axios/axios)
 - [SVGR](https://react-svgr.com/)
 
-#### First, Install deps
+#### First, Install dependencies 
 
 ```bash
 $ npm install
