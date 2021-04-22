@@ -1,0 +1,135 @@
+@import url("https://fonts.googleapis.com/css2?family=Baloo+2&display=swap");
+@import "../assets/variables.scss";
+
+.itemcard {
+  transition: all 0.25s ease;
+  -moz-transition: all 0.25s ease;
+  -webkit-transition: all 0.25s ease;
+
+  &:hover {
+    transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+  }
+
+  .itemcard-container {
+    margin: ($fingerSize * 3) + 2px $fingerSize + 6px;
+    width: $cardWidth;
+    height: $cardHeight;
+    overflow: hidden;
+  }
+
+  button {
+    border: none;
+    background: none;
+    cursor: pointer;
+    outline: none;
+    height: $cardHeight;
+
+    img {
+      width: $originalWidth;
+      object-fit: contain;
+      border-radius: $fingerSize + 5px;
+      margin-bottom: $fingerSize;
+    }
+  }
+}
+
+.modal {
+  .ReactModal__Overlay.ReactModal__Overlay--after-open {
+    background: $bgOverlay !important;
+  }
+
+  .ReactModal__Content.ReactModal__Content--after-open {
+    max-width: $popupWidth;
+    height: $popupHeight;
+    background: $bgContent !important;
+    margin: auto;
+    border: none !important;
+    border-radius: $fingerSize !important;
+    outline: none;
+    font-family: $fontText;
+    overflow-y: scroll;
+    padding: $fingerSize $fingerSize + 10px !important;
+    text-align: justify;
+    transition: color 0.2s ease;
+
+    &::-webkit-scrollbar {
+      display: none;
+    }
+
+    h3 {
+      color: $colorPopupText;
+      font-weight: $fontWeight + 100;
+      font-size: $fontSize + 21px;
+      text-align: center;
+      letter-spacing: 1px;
+      line-height: $fingerSize + 30px;
+    }
+    .viewer-count {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-bottom: $fingerSize - 5px;
+      p {
+        font-size: $fontSize + 1px;
+        letter-spacing: 1px;
+        margin: $fingerSize - 5px;
+        display: flex;
+        align-items: center;
+        cursor: pointer;
+      }
+    }
+
+    span {
+      color: $colorModalText;
+      font-weight: $fontWeight;
+      font-style: normal;
+      padding-top: $fingerSize - 7px;
+    }
+  }
+}
+
+@media screen and (max-width: 750px) {
+  .itemcard {
+    .itemcard-container {
+      margin: $fingerSize + 6px 0 !important;
+    }
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .itemcard {
+    width: $originalWidth - 5%;
+
+    .itemcard-container {
+      padding: $fingerSize 0;
+      margin: $fingerSize - 5px 0 !important;
+
+      &:hover {
+        transform: none;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .itemcard-container {
+    margin: 0 !important;
+  }
+
+  .ReactModal__Content.ReactModal__Content--after-open {
+    h3 {
+      font-size: $fontSize * 2 !important;
+      margin: $fingerSize 0 !important;
+      line-height: $fingerSize + 11px !important;
+    }
+    .viewer-count {
+      margin: 0 -20px 5px -20px;
+      p,
+      span {
+        font-size: $fontSize - 1px !important;
+      }
+    }
+  }
+}

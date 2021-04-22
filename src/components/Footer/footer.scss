@@ -1,0 +1,32 @@
+@import "../assets/variables.scss";
+
+section.footer {
+  padding-bottom: $fingerSize + 6px;
+  .footer-container {
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    text-align: center;
+
+    p {
+      color: $colorFooterText;
+      font-weight: $fontWeight;
+      font-size: $fontSize;
+    }
+
+    a {
+      text-decoration: none;
+      color: $colorOriginal;
+    }
+  }
+}
+
+@media screen and (max-width: 500px) {
+  section.footer {
+    .footer-container {
+      p {
+        font-size: $fontSize - 2px;
+      }
+    }
+  }
+}

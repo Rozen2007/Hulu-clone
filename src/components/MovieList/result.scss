@@ -1,0 +1,11 @@
+@import "../assets/variables.scss";
+
+.results {
+  padding-bottom: $fingerSize * 4;
+
+  div {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+}
