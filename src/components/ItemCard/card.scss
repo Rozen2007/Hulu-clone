@@ -1,6 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Baloo+2&display=swap");
 @import "../assets/variables.scss";
+*{
+  -webkit-tap-highlight-color: transparent;
 
+}
 .itemcard {
   transition: all 0.25s ease;
   -moz-transition: all 0.25s ease;
